@@ -19,6 +19,7 @@ Note: Step 4 and 5 are optional as both, Streamlink and Livestreamer will automa
 3A. Install Chocolatey in Powershell using command "Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))"
 3B. In Powershell enter following command to install Streamlink "choco install streamlink --version=1.7.0"
 3C. In Powershell enter following command to install Livestreamer "choco install livestreamer"
+3D. If you are semi-advanced user, and know how to play with the code, you can open C4.bat and C43.bat and config.ini and config3.ini and alter values as per the paths on your system, you could face some errors, which will fix as you go on fixing the paths.
 4. Add Path to Environment Variables. You can search for Path in Start Menu (windows 10/11) and an option "Edit the System Environment Variables" will show up, click on that, then the "Environment Variables" option on there.
 5. There will be Variable named "Path" double click, select "New" add "C:\cmd\C4\Requirements\ffmpeg-20200831-4a11a6f-win64-static\bin" (without " "), click "New" again, add "C:\cmd\C4\Requirements\trmpdump", click "New" again, add "C:\cmd\C4\Requirements".
 6. This has added the tools required to dump the stream into a file with different options, like Streamlink, Livestreamer, YouTube-DL, FFMPEG.
