@@ -15,16 +15,16 @@ Setup
 1. Download entire code as ZIP from Github, extract the C4 folder to C:\cmd\ (for minimal edits in configs).
 2. Open "Requirements" folder, install Python 2.7.13 (python-2.7.18.exe) and Python 3.9.0 (python-3.9.0-amd64.exe) in successive order.
 3. Once Python is installed, go to root folder, C:\cmd\C4 , open cmd or powershell here and enter 'pip install -r Requirements.txt' and then 'pip install -r Requirements3.txt'
-Note: Step 4 and 5 are optional as both, Streamlink and Livestreamer will automatically install using pip, however they might not be in the default locations that are set in the C4.bat and C43.bat, and hence you can either choose to edit the files to set the right location, or else, use this to make sure it gets installed in specified paths as per code, so no errors occur.
-3A. Install Chocolatey in Powershell using command "Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))"
-3B. In Powershell enter following command to install Streamlink "choco install streamlink --version=1.7.0"
-3C. In Powershell enter following command to install Livestreamer "choco install livestreamer"
-3D. If you are semi-advanced user, and know how to play with the code, you can open C4.bat and C43.bat and config.ini and config3.ini and alter values as per the paths on your system, you could face some errors, which will fix as you go on fixing the paths.
-4. Add Path to Environment Variables. You can search for Path in Start Menu (windows 10/11) and an option "Edit the System Environment Variables" will show up, click on that, then the "Environment Variables" option on there.
-5. There will be Variable named "Path" double click, select "New" add "C:\cmd\C4\Requirements\ffmpeg-20200831-4a11a6f-win64-static\bin" (without " "), click "New" again, add "C:\cmd\C4\Requirements\trmpdump", click "New" again, add "C:\cmd\C4\Requirements".
-6. This has added the tools required to dump the stream into a file with different options, like Streamlink, Livestreamer, YouTube-DL, FFMPEG.
-7. Then, proceed to the "C4_Wanted" file, add the models you wish to add to your list for recording, go to stream/profile, copy the username after the URL, (For Example: www.cam4.com/hazelmoore | In this, the thing you need to copy is hazelmoore) and paste it in the file, one name in each line, remember to put an empty line after the last model name is entered (code bug)
-8. Open C4.bat (preferred) or C43.bat, select your preferred options for stream recording (personal preference is 2->0->select model as per your list->2 as Streamlink gives mp4 output and is stabler)
+Note: Step 4, 5, 6 and 7 are optional as both, Streamlink and Livestreamer will automatically install using pip, however they might not be in the default locations that are set in the C4.bat and C43.bat, and hence you can either choose to edit the files to set the right location, or else, use this to make sure it gets installed in specified paths as per code, so no errors occur.
+4. Install Chocolatey in Powershell using command "Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))"
+5. In Powershell enter following command to install Streamlink "choco install streamlink --version=1.7.0"
+6. In Powershell enter following command to install Livestreamer "choco install livestreamer"
+7. If you are semi-advanced user, and know how to play with the code, you can open C4.bat and C43.bat and config.ini and config3.ini and alter values as per the paths on your system, you could face some errors, which will fix as you go on fixing the paths.
+8. Add Path to Environment Variables. You can search for Path in Start Menu (windows 10/11) and an option "Edit the System Environment Variables" will show up, click on that, then the "Environment Variables" option on there.
+9. There will be Variable named "Path" double click, select "New" add "C:\cmd\C4\Requirements\ffmpeg-20200831-4a11a6f-win64-static\bin" (without " "), click "New" again, add "C:\cmd\C4\Requirements\trmpdump", click "New" again, add "C:\cmd\C4\Requirements".
+10. This has added the tools required to dump the stream into a file with different options, like Streamlink, Livestreamer, YouTube-DL, FFMPEG.
+11. Then, proceed to the "C4_Wanted" file, add the models you wish to add to your list for recording, go to stream/profile, copy the username after the URL, (For Example: www.cam4.com/hazelmoore | In this, the thing you need to copy is hazelmoore) and paste it in the file, one name in each line, remember to put an empty line after the last model name is entered (code bug)
+12. Open C4.bat (preferred) or C43.bat, select your preferred options for stream recording (personal preference is 2->0->select model as per your list->2 as Streamlink gives mp4 output and is stabler)
 
 Running & Output
 ================
